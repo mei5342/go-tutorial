@@ -11,6 +11,8 @@ func Hello(name string) (string, error) {
     if name == "" {
         return name, errors.New("empty name")
     }
+	// Fatal
+	// message := fmt.Sprint(randomFormat())
     message := fmt.Sprintf(randomFormat(), name)
     return message, nil
 }
